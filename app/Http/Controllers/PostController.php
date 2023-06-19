@@ -16,5 +16,7 @@ class PostController extends Controller
         $posts = DB::select('select * from posts', [1]);
 
         return view('post.index', ['posts' => $posts]);
+
+
     }
 }
